@@ -3,9 +3,9 @@ import os
 import cv2
 import numpy as np
 
-from src.config import CONFIG_DEFAULTS as config
-from src.logger import logger
-from src.utils.imgutils import (
+from OMRChecker.src.config import CONFIG_DEFAULTS as config
+from OMRChecker.src.logger import logger
+from OMRChecker.src.utils.imgutils import (
     ImageUtils,
     MainOperations,
     four_point_transform,

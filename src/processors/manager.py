@@ -6,7 +6,7 @@ Adapated from https://github.com/gdiepen/python_processor_example
 import inspect
 import pkgutil
 
-from src.logger import logger
+from OMRChecker.src.logger import logger
 
 
 class Processor:
@@ -21,7 +21,7 @@ class ProcessorManager:
     that contain a class definition that is inheriting from the Processor class
     """
 
-    def __init__(self, processors_dir="src.processors"):
+    def __init__(self, processors_dir="OMRChecker.src.processors"):
         """Constructor that initiates the reading of all available processors
         when an instance of the ProcessorCollection object is created
         """

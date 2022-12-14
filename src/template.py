@@ -11,7 +11,7 @@ from copy import deepcopy
 
 import numpy as np
 
-from src.logger import logger
+from OMRChecker.src.logger import logger
 
 from .constants import QTYPE_DATA, SCHEMA_DEFAULTS_PATH, TEMPLATE_DEFAULTS_PATH
 from .utils.file import load_json, validate_json

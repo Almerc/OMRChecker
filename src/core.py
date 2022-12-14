@@ -17,14 +17,14 @@ import cv2
 import numpy as np
 import pandas as pd
 
-from src import constants
+from OMRChecker.src import constants
 
 # TODO: use open_config_with_defaults after making a Config class.
-from src.config import CONFIG_DEFAULTS as config
-from src.logger import logger
+from OMRChecker.src.config import CONFIG_DEFAULTS as config
+from OMRChecker.src.logger import logger
 
 # TODO: further break utils down and separate the imports
-from src.utils.imgutils import (
+from OMRChecker.src.utils.imgutils import (
     ImageUtils,
     MainOperations,
     draw_template_layout,

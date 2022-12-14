@@ -7,7 +7,7 @@ from jsonschema import Draft202012Validator, validate
 from rich.console import Console
 from rich.table import Table
 
-from src.constants import SCHEMA_DEFAULTS_PATH
+from OMRChecker.src.constants import SCHEMA_DEFAULTS_PATH
 
 
 def load_json(path, **rest):

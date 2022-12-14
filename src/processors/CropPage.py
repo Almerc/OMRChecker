@@ -6,8 +6,8 @@ https://www.pyimagesearch.com/2015/04/06/zero-parameter-automatic-canny-edge-det
 import cv2
 import numpy as np
 
-from src.logger import logger
-from src.utils.imgutils import ImageUtils, four_point_transform
+from OMRChecker.src.logger import logger
+from OMRChecker.src.utils.imgutils import ImageUtils, four_point_transform
 
 from .interfaces.ImagePreprocessor import ImagePreprocessor
 

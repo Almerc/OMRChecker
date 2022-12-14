@@ -11,9 +11,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # TODO: pass config in runtime later
-import src.constants as constants
-from src.config import CONFIG_DEFAULTS as config
-from src.logger import logger
+import OMRChecker.src.constants as constants
+from OMRChecker.src.config import CONFIG_DEFAULTS as config
+from OMRChecker.src.logger import logger
 
 
 class ImageUtils:
