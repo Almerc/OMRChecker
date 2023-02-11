@@ -7,7 +7,7 @@
 
 """
 
-from src.logger import logger
+from OMRChecker.src.logger import logger
 
 logger.info(f"Loading OMRChecker modules...")
 # It takes a few seconds for the imports
@@ -15,7 +15,7 @@ logger.info(f"Loading OMRChecker modules...")
 import argparse
 from pathlib import Path
 
-from src.core import entry_point
+from OMRChecker.src.core import entry_point
 
 # construct the argument parse and parse the arguments
 argparser = argparse.ArgumentParser()
@@ -23,7 +23,7 @@ argparser = argparse.ArgumentParser()
 argparser.add_argument(
     "-i",
     "--inputDir",
-    default=["inputs"],
+    default=["resources/inputs"],
     # https://docs.python.org/3/library/argparse.html#nargs
     nargs="*",
     required=False,
@@ -35,7 +35,7 @@ argparser.add_argument(
 argparser.add_argument(
     "-o",
     "--outputDir",
-    default="outputs",
+    default="resources/outputs",
     required=False,
     dest="output_dir",
     help="Specify an output directory.",
