@@ -18,7 +18,7 @@ class FeatureBasedAlignment(ImagePreprocessor):
         self.ref_path = path.joinpath(options["reference"])
         self.ref_img = cv2.imread(str(self.ref_path), cv2.IMREAD_GRAYSCALE)
         # get options with defaults
-        self.max_features = options.get("maxFeatures", 500)
+        self.max_features = int(options.get("maxFeatures", 500))
         self.good_match_percent = options.get("goodMatchPercent", 0.15)
         self.transform_2_d = options.get("2d", False)
         # Extract keypoints and description of source image
@@ -48,7 +48,7 @@ class FeatureBasedAlignment(ImagePreprocessor):
         matcher = cv2.DescriptorMatcher_create(
             cv2.DESCRIPTOR_MATCHER_BRUTEFORCE_HAMMING
         )
-        matches = matcher.match(from_descriptors, self.to_descriptors, None)
+        matches = np.array(matcher.match(from_descriptors, self.to_descriptors, None))
 
         # Sort matches by score
         matches.sort(key=lambda x: x.distance, reverse=False)
