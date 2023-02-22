@@ -10,8 +10,8 @@
 import argparse
 from pathlib import Path
 
-from src.entry import entry_point
-from src.logger import logger
+from OMRChecker.src.entry import entry_point
+from OMRChecker.src.logger import logger
 
 
 def parse_args():
@@ -21,7 +21,7 @@ def parse_args():
     argparser.add_argument(
         "-i",
         "--inputDir",
-        default=["inputs"],
+        default=["resources/inputs"],
         # https://docs.python.org/3/library/argparse.html#nargs
         nargs="*",
         required=False,
@@ -33,7 +33,7 @@ def parse_args():
     argparser.add_argument(
         "-o",
         "--outputDir",
-        default="outputs",
+        default="resources/outputs",
         required=False,
         dest="output_dir",
         help="Specify an output directory.",
