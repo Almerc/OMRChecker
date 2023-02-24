@@ -15,15 +15,15 @@ import cv2
 import pandas as pd
 from rich.table import Table
 
-from src import constants
-from src.defaults import CONFIG_DEFAULTS
-from src.evaluation import EvaluationConfig, evaluate_concatenated_response
-from src.logger import console, logger
-from src.template import Template
-from src.utils.file import Paths, setup_dirs_for_paths, setup_outputs_for_template
-from src.utils.image import ImageUtils
-from src.utils.interaction import InteractionUtils, Stats
-from src.utils.parsing import get_concatenated_response, open_config_with_defaults
+from OMRChecker.src import constants
+from OMRChecker.src.defaults import CONFIG_DEFAULTS
+from OMRChecker.src.evaluation import EvaluationConfig, evaluate_concatenated_response
+from OMRChecker.src.logger import console, logger
+from OMRChecker.src.template import Template
+from OMRChecker.src.utils.file import Paths, setup_dirs_for_paths, setup_outputs_for_template
+from OMRChecker.src.utils.image import ImageUtils
+from OMRChecker.src.utils.interaction import InteractionUtils, Stats
+from OMRChecker.src.utils.parsing import get_concatenated_response, open_config_with_defaults
 
 # Load processors
 STATS = Stats()
@@ -33,6 +33,7 @@ def entry_point(input_dir, args):
     if not os.path.exists(input_dir):
         raise Exception(f"Given input directory does not exist: '{input_dir}'")
     curr_dir = input_dir
+    logger.info("ENTRY")
     return process_dir(input_dir, curr_dir, args)
 
 

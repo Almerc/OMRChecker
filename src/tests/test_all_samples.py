@@ -2,7 +2,7 @@ import os
 import shutil
 from glob import glob
 
-from src.tests.utils import run_entry_point, setup_mocker_patches
+from OMRChecker.src.tests.utils import run_entry_point, setup_mocker_patches
 
 
 def read_file(path):

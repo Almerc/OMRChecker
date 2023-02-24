@@ -6,11 +6,10 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-import src.constants as constants
-from src.logger import logger
-from src.utils.image import CLAHE_HELPER, ImageUtils
-from src.utils.interaction import InteractionUtils
-
+import OMRChecker.src.constants as constants
+from OMRChecker.src.logger import logger
+from OMRChecker.src.utils.image import CLAHE_HELPER, ImageUtils
+from OMRChecker.src.utils.interaction import InteractionUtils
 
 class ImageInstanceOps:
     """Class to hold fine-tuned utilities for a group of images. One instance for each processing directory."""

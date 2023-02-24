@@ -12,8 +12,8 @@ import jsonschema
 from jsonschema import validate
 from rich.table import Table
 
-from src.logger import console, logger
-from src.schemas import SCHEMA_JSONS, SCHEMA_VALIDATORS
+from OMRChecker.src.logger import console, logger
+from OMRChecker.src.schemas import SCHEMA_JSONS, SCHEMA_VALIDATORS
 
 
 def parse_validation_error(error):

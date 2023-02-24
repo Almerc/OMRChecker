@@ -7,13 +7,13 @@ import cv2
 import pandas as pd
 from rich.table import Table
 
-from src.logger import console, logger
-from src.schemas.constants import (
+from OMRChecker.src.logger import console, logger
+from OMRChecker.src.schemas.constants import (
     BONUS_SECTION_PREFIX,
     DEFAULT_SECTION_KEY,
     MARKING_VERDICT_TYPES,
 )
-from src.utils.parsing import (
+from OMRChecker.src.utils.parsing import (
     get_concatenated_response,
     open_evaluation_with_validation,
     parse_fields,

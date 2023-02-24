@@ -1,12 +1,3 @@
-"""
-
- OMRChecker
-
- Author: Udayraj Deshmukh
- Github: https://github.com/Udayraj123
-
-"""
-
 import argparse
 from pathlib import Path
 
@@ -72,7 +63,6 @@ def parse_args():
         exit(11)
     return args
 
-
 def entry_point_for_args(args):
     for root in args["input_paths"]:
         entry_point(
@@ -81,6 +71,5 @@ def entry_point_for_args(args):
         )
 
 
-if __name__ == "__main__":
-    args = parse_args()
-    entry_point_for_args(args)
+args = parse_args()
+entry_point_for_args(args)
